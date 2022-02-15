@@ -12,6 +12,7 @@ body {
   text-align: center;
   height: 100%;
   width: 100%;
+  overflow-y: none;
 }
 
 h1 {
