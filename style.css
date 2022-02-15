@@ -4,7 +4,7 @@ html { height: 100%; width: 100%; }
 
 body {
   margin: 0;
-  background-image: url('C:\\Users\\trist\\Desktop\\Code\\Web files (HTML, CSS, JS)\\ENG_PROJ\\ENG_PROJ_BG.png');
+  background-image: url('background.png');
   font-size: 2em;
   background-size: 100% 100%;
   font-family: 'Staatliches';
