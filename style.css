@@ -4,7 +4,7 @@ html { height: 100%; width: 100%; }
 
 body {
   margin: 0;
-  background: url("background_img.jpg") rgba(0, 0, 0, 0.5);
+  background: url("background_img.jpg") rgba(0, 0, 0, 0.75);
   font-size: 2em;
   background-size: 100% 100%;
   font-family: 'Poppins';
@@ -16,7 +16,10 @@ body {
   background-blend-mode: multiply;
 }
 
-h1 { font-size: 2em; }
+h1 {
+  font-size: 2em;
+  text-shadow: 0 0 50px rgba(255, 255, 255, 1);
+}
 
 #book_cover {
   position: relative;
