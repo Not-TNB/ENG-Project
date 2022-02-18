@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   text-shadow: 0 0 50px rgba(255, 255, 255, 1);
 }
 
@@ -28,10 +28,21 @@ h1 {
   transition: height 0.5s, top 0.5s;
   box-shadow: 0 0 50px black;
   border: 5px solid white;
+  left: 0%;
+  transition: all 0.6s;
 }
 
 #book_cover:hover {
   height: 65%;
   top: -5%;
-  transition: height 0.5s, top 0.5s;
+  transition: all 0.6s;
+}
+
+#coverBtn { display: none; }
+
+#coverBtn:checked + label > #book_cover {
+  height: 65%;
+  top: -5%;
+  left: -20%;
+  transition: all 0.6s;
 }
