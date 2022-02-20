@@ -18,13 +18,13 @@ body {
 
 h1 {
   font-size: 1.8em;
-  text-shadow: 0 0 50px rgba(255, 255, 255, 1);
+  text-shadow: 0 0 100px rgba(255, 255, 255, 1);
 }
 
 #book_cover {
   position: relative;
-  height: 55%;
-  top: 0%;
+  height: 110%;
+  top: -5%;
   transition: height 0.5s, top 0.5s;
   box-shadow: 0 0 50px black;
   border: 5px solid white;
@@ -33,16 +33,38 @@ h1 {
 }
 
 #book_cover:hover {
-  height: 65%;
-  top: -5%;
+  height: 130%;
+  top: -15%;
   transition: all 0.6s;
 }
 
 #coverBtn { display: none; }
 
 #coverBtn:checked + label > #book_cover {
-  height: 65%;
-  top: -5%;
-  left: -20%;
+  height: 130%;
+  top: -15%;
   transition: all 0.6s;
+}
+
+#flexDiv {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+#plot {
+  margin: 0 0 0 1%;
+  width: 0%;
+  opacity: 0%;
+  height: 100%;
+  border: 5px solid white;
+  top: -50%;
+  transition: opacity 0.6s, width 1.2s, margin 1.2s;
+}
+
+#coverBtn:checked ~ #plot {
+  width: 60%;
+  margin: 0 0 0 5%;
+  opacity: 100%;
+  transition: opacity 0.6s, width 1.2s, margin 1.2s;
 }
