@@ -3,6 +3,7 @@
 <head>
   <title>ENGLISH PROJECT (Clara, Ellen, Jane, Steve, Tristan)</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
   <body>
     <h1 style="margin: 2% 0 -2% 0;">A Review of</h1>
@@ -11,7 +12,6 @@
       <input type="checkbox" id="coverBtn" />
       <label class="btn" for="coverBtn"><img src="cover.png" id="book_cover" /></label>
 
-      <!--General Info-->
       <div id="introTxt">
         <h1 style="margin: 4% 0 -2% 0;">General Info</h1>
         <p>
@@ -22,13 +22,10 @@
         </p>
       </div>
     </div>
-
     <br><br><br><br>
-
-    <div id="rest">
-      <div id="GeneralAnalysis">
-        <h1 style="margin: 4% 0 -2% 0;">Plot</h1>
-        <p>
+      <div id="generalAnalysis">
+        <h1 data-aos="fade-up">Plot</h1>
+        <p data-aos="fade-up">
           During World War II, Bruno and his family left Berlin to take up 
           residence near the concentration camp where his father had just become 
           commandant. Unhappy and lonely, he wanders out behind his house and 
@@ -36,55 +33,71 @@
           friendship between the son of a Nazi commandant and a young Jewish 
           prisoner at Auschwitz, oblivious to the real nature of their surroundings.
         </p>
-        <h1 style="margin: 4% 0 -2% 0;">Characters</h1>
+    <br><br>
+        <h1 id="characters" data-aos="fade-up">Characters</h1>
         <u1>
-          <li>Bruno</li>
-          <li>Gretel</li>
-          <li>Shmuel</li>
-          <li>Lieutenant Kotler</li>
-          <li>Pavel</li>
-          <li>Ralf(father)</li>
-          <li>Vera(mother)</li>
-          <li>Herr Liszt</li>
-          <li>Natalie(grandmother)</li>
-          <li>Matias(grandfather)</li>
-          <li>"The Fury"(Hitler)</li>
-          <li>Eva(wife of "The Fury")</li>
-          <li>Maria(servant working for Bruno's family)</li>
+          <li data-aos="fade-up">Bruno</li>
+          <li data-aos="fade-up">Gretel</li>
+          <li data-aos="fade-up">Shmuel</li>
+          <li data-aos="fade-up">Lieutenant Kotler</li>
+          <li data-aos="fade-up">Pavel</li>
+          <li data-aos="fade-up">Ralf (father)</li>
+          <li data-aos="fade-up">Vera (mother)</li>
+          <li data-aos="fade-up">Herr Liszt</li>
+          <li data-aos="fade-up">Natalie (grandmother)</li>
+          <li data-aos="fade-up">Matias (grandfather)</li>
+          <li data-aos="fade-up">"The Fury" (Hitler)</li>
+          <li data-aos="fade-up">Eva (wife of "The Fury")</li>
+          <li data-aos="fade-up">Maria (servant working for Bruno's family)</li>
         </u1>
-        <h1 style="margin: 4% 0 -2% 0;">Settings</h1>
+    <br><br>
+        <h1 data-aos="fade-up">Settings</h1>
         <u1>
-          <li>Berlin</li>
-          <li>Auschwitz concentration camp</li>
+          <li data-aos="fade-up">Berlin</li>
+          <li data-aos="fade-up">Auschwitz concentration camp</li>
         </u1>
-      </div> 
-      
-      <div id="Likes-Dislikes">
-        <h1 style="margin: 4% 0 -2% 0;">What we think</h1>
-        <p>
-          "I like that the book includes historical events and
-          educates us abouut how sad the Auschwitz events were in
-          an interesting way, unfortunately, that didn't appply to
-          all the events that happened in the story as some parts
-          were quite boring" -Jane <br>
+      </div>
+    <br><br>
+      <div id="likesDislikes">
+        <h1 data-aos="fade-up">What we think</h1>
+        <p data-aos="fade-up">
+          "I like that the book includes historical events and educates us
+          about how sad the Auschwitz events were in an interesting &
+          engaging way, especially the moments where Bruno sneaks out to see
+          Shmuel. Unfortunately, that didn't appply to all the events that
+          happened in the story as I found some of the conetent too complicated
+          as to boring" -Jane
+        </p>
+        <p data-aos="fade-up">
           "What i like about the book is that the settings are very 
           detailed and that the story relates to reality, in specific 
           the events that occurred during the Holocaust. What i dont like 
           about the book is that it has a sad ending, in contrast to 
-          most other books that i have read." -Tristan <br>
+          most other books that i have read." -Tristan
+        </p>
+        <p data-aos="fade-up">
           "I love the fact that the book has a lot of themes and revolves
           around friendship and we learn a lot of moral lessons such as
           self-honesty, kindness etc. However, I really dislike the 
           parts of the story where it there were disturbing and 
-          violent contents." -Ellen <br>
+          violent contents." -Ellen
+        </p>
+        <p data-aos="fade-up">        
           "I think that it is a wonderful book since there are lots of
           characters each with opposing personalities but there are some 
           violent contents in it which made me felt uncomfortable 
-          while reading." -Clara <br>
-          "" -Steve
+          while reading." -Clara
+        </p>
+        <p data-aos="fade-up">
+          "In my opinion, what interests me most about this book is its
+          unique storyline and excellent portrayal of the characters' emotions.
+          Set during World War II, the book provides an insightful description
+          of the living conditions and struggles of Jewish people under the
+          Nazi reign, however, there were too many complicated ties to WWII
+          that made some parts too complicated to understand." -Steve
         </p>
       </div>
-    </div> 
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </html>
