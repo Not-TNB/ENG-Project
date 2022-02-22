@@ -12,17 +12,18 @@ body {
   background: url("background_img.jpg") rgba(0, 0, 0, 0.75);
   font-size: 2em;
   background-size: 100% 100%;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   color: white;
   text-align: center;
   height: 100%;
   width: 100%;
   overflow-y: hidden;
   background-blend-mode: multiply;
+  transition: all 0.6s;
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 1.7em;
   text-shadow: 0 0 100px rgba(255, 255, 255, 1);
 }
 
@@ -39,20 +40,21 @@ p {
   box-shadow: 0 0 50px black;
   border: 5px solid white;
   left: 0%;
+  border-radius: 20px;
   transition: all 0.6s;
 }
 
 #book_cover:hover {
-  height: 130%;
-  top: -15%;
+  height: 120%;
+  top: -10%;
   transition: all 0.6s;
 }
 
 #coverBtn { display: none; }
 
 #coverBtn:checked + label > #book_cover {
-  height: 130%;
-  top: -15%;
+  height: 120%;
+  top: -10%;
   transition: all 0.6s;
 }
 
@@ -60,28 +62,41 @@ p {
   display: flex;
   justify-content: center;
   height: 50%;
+  margin-top: -2%;
 }
 
 #introTxt {
   align-self: center;
-  margin: 0 0 0 0;
+  margin: 0;
   width: 0%;
   opacity: 0%;
-  height: 130%;
+  height: 120%;
   border: 5px solid white;
   background-color: var(--blueTranslucent); 
-  -ms-overflow-style: none; /* Invis scrollbar for IE & Edge */
   scrollbar-width: none; /* Invis scrollbar for Firefox */
   overflow-y: scroll; /* Allow scrolling in y-axis (vertical) */
+  border-radius: 20px;
   transition: opacity 0.3s, width 0.6s, margin 0.6s;
+}
+
+#introTxt h1, #introTxt p {
+  top: -50%;
+  transform: translateY(50%);
 }
 
 #introTxt::-webkit-scrollbar { display: none; } /* Invis scrollbar for Chrome, Safari & Opera */
 
 #coverBtn:checked ~ #introTxt {
   width: 60%;
-  height: 130%;
+  height: 120%;
   margin: 10px 0 0 5%;
   opacity: 100%;
   transition: opacity 1.2s, width 0.6s, margin 0.6s;
 }
+
+#buttonDiv {
+  position: relative;
+  height: 100%;
+}
+
+#rest { display: none; }
