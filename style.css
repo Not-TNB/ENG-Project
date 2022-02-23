@@ -102,18 +102,14 @@ p {
   height: 100%;
 }
 
- #plot, #characters, #settings, #likesDislikes, #img1 iframe, #img2 img, #img3 img, #img4 img {
+ #plot, #characters, #settings, #likesDislikes, #img1 img, #img2 img, #img3 img, #img4 img, #trailer {
   border: 5px solid white;
   border-radius: 20px;
   padding: 2% 0% 3% 0%;
   margin: 5%;
 }
 
-#img1 iframe {
-  aspect-ratio: 16 / 9;
-}
-
-#plot, #characters, #settings, #likesDislikes { background-color: var(--blueTranslucent); }
+#plot, #characters, #settings, #likesDislikes, #trailer { background-color: var(--blueTranslucent); }
 
 #plot, #settings, #img2, #img4 { float: left; }
 #characters, #likesDislikes { float: right; }
@@ -125,7 +121,7 @@ p {
   flex-direction: column;
 }
 
-#img1 iframe, #img2 img, #img3 img, #img4 img {
+#img1 img, #img2 img, #img3 img, #img4 img {
   padding: 0%;
   width: 88%;
 }
@@ -152,3 +148,8 @@ p {
 #img2 { grid-area: img2; }
 #img3 { grid-area: img3; }
 #img4 { grid-area: img4; }
+
+iframe {
+  width: 60%;
+  aspect-ratio: 16 / 9;
+}
