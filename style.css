@@ -5,10 +5,13 @@
   --blue: #005a7d;
 }
 
-html { height: 100%; width: 100%; }
+html {
+  height: 100%;
+  width: 100%;
+}
 
 body {
-  margin: 0;
+  margin: 0%;
   background: url("background_img.jpg") rgba(0, 0, 0, 0.75);
   font-size: 2em;
   background-size: 100% 100%;
@@ -17,7 +20,7 @@ body {
   text-align: center;
   height: 100%;
   width: 100%;
-  overflow-y: hidden;
+  overflow: hidden;
   background-blend-mode: multiply;
   transition: all 0.6s;
 }
@@ -99,4 +102,16 @@ p {
   height: 100%;
 }
 
-#rest { display: none; }
+#plot, #characters, #settings, #likesDislikes {
+  opacity: 0%;
+  background-color: var(--blueTranslucent); 
+  border: 5px solid white;
+  border-radius: 20px; 
+  padding: 2% 0% 3% 0%;
+  margin: 5%;
+  width: 50%; 
+}
+
+#plot, #settings { float: left; }
+
+#characters, #likesDislikes { float: right; }
