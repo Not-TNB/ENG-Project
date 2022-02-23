@@ -1,6 +1,4 @@
-window.onbeforeunload = function() {
-  window.scrollTo(0, 0);
-}
+window.onbeforeunload = function() { window.scrollTo(0, 0); }
 
 // initialize AOS (Animate On Scroll)
 AOS.init({ 
@@ -9,14 +7,24 @@ AOS.init({
 });
 
 var book_cover = document.getElementById('coverBtn')
-var body = document.getElementsByTagName("body")[0]
-var rest = document.getElementById('rest')
+var body = document.getElementsByTagName('body')[0]
+var plot = document.getElementById('plot')
+var characters = document.getElementById('characters')
+var settings = document.getElementById('settings')
+var likesDislikes = document.getElementById('likesDislikes')
 
 book_cover.addEventListener('change', function() {
   if (this.checked) {
+    plot.style.opacity = "100%"
+    characters.style.opacity = "100%"
+    settings.style.opacity = "100%"
+    likesDislikes.style.opacity = "100%"
     body.style.overflowY = 'scroll'
-    rest.style.display = 'block'
   } else {
+    plot.style.opacity = "0%"
+    characters.style.opacity = "0%"
+    settings.style.opacity = "0%"
+    likesDislikes.style.opacity = "0%"
     body.style.overflowY = 'hidden'
     window.scrollTo(0, 0);
   }
