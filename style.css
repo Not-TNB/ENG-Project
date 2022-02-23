@@ -102,16 +102,53 @@ p {
   height: 100%;
 }
 
-#plot, #characters, #settings, #likesDislikes {
-  opacity: 0%;
-  background-color: var(--blueTranslucent); 
+ #plot, #characters, #settings, #likesDislikes, #img1 iframe, #img2 img, #img3 img, #img4 img {
   border: 5px solid white;
-  border-radius: 20px; 
+  border-radius: 20px;
   padding: 2% 0% 3% 0%;
   margin: 5%;
-  width: 50%; 
 }
 
-#plot, #settings { float: left; }
+#img1 iframe {
+  aspect-ratio: 16 / 9;
+}
 
+#plot, #characters, #settings, #likesDislikes { background-color: var(--blueTranslucent); }
+
+#plot, #settings, #img2, #img4 { float: left; }
 #characters, #likesDislikes { float: right; }
+
+#img1, #img2, #img3, #img4 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#img1 iframe, #img2 img, #img3 img, #img4 img {
+  padding: 0%;
+  width: 88%;
+}
+
+#container {
+  opacity: 0%;
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "plot img1"
+    "img2 characters"
+    "settings img3"
+    "img4 likesDislikes"; 
+}
+
+#plot { grid-area: plot; }
+#characters { grid-area: characters; }
+#settings { grid-area: settings; }
+#likesDislikes { grid-area: likesDislikes; }
+#img1 { grid-area: img1; }
+#img2 { grid-area: img2; }
+#img3 { grid-area: img3; }
+#img4 { grid-area: img4; }
