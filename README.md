@@ -13,7 +13,7 @@ During World War II, Bruno and his family left Berlin to take up residence near 
 - Gretel
 - Shmuel
 - Lieutenant Kotler
-- Pavel (nice guy)
+- Pavel
 - Ralf (father)
 - Vera (mother)
 - Herr Liszt
