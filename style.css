@@ -121,9 +121,16 @@ p {
   flex-direction: column;
 }
 
-#img1 img, #img2 img, #img3 img, #img4 img {
+/* #img1 img, #img2 img, #img3 img, #img4 img {
   padding: 0%;
   width: 88%;
+} */
+
+#img1 img, #img2 img, #img3 img, #img4 img {
+  padding: 0%;
+  margin: 5%;
+  width: 80%;
+  align-self: center;
 }
 
 #container {
