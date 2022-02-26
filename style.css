@@ -153,13 +153,38 @@ iframe {
   aspect-ratio: 16 / 9;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  transition: text-shadow 0.1s;
+}
+
+#footer {
+  background-color: #14171cee;
+  border-top: 10px solid white;
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  padding: 5%;
+  grid-template-areas: 
+    "credits github cat";
+}
+
+#credits { grid-area: credits; }
+#github { grid-area: github; }
+#cat { grid-area: cat; }
+
+#footer a { color: #6f92b0; }
+
 @media (max-width: 1200px) {
   body { font-size: 1.6em; }
   #bottomTitle { margin-bottom: 0%; }
 }
 
 @media (max-width: 1000px) {
-  body { padding-top: 5%; }
+  body { padding-top: 2%; }
 
   #flexDiv {
     width: 70%;
@@ -176,8 +201,8 @@ iframe {
 
 @media (max-width: 800px) {
   #container {
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.1 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 1fr 0.1fr; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 1fr 0.1fr; 
     grid-template-areas: 
       "introTxtAlt"
       "plot"
@@ -190,6 +215,9 @@ iframe {
       "img4"
   }
 
+  #footer { display: block; }
+  #credits, #github, #cat { padding: 10% 0%; }
+
   .title { display: none; }
 
   #flexDiv {
@@ -199,6 +227,14 @@ iframe {
 
   #introTxt { display: none; }
   #introTxtAlt { display: block; }
+
+  #trailer {
+    background: url("https://www.intofilm.org/intofilm-production/7779/scaledcropped/3000x1688/resources/7779/the-boy-in-the-striped-pyjamas-image-4-heyday-films.jpg");
+    background-size: cover;
+    height: 20%;
+  }
+
+  iframe { display: none }
 }
 
 @media (max-width: 500px) {
