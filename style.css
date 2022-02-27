@@ -174,7 +174,21 @@ a {
 
 #credits { grid-area: credits; }
 #github { grid-area: github; }
-#cat { grid-area: cat; }
+#cat {
+  grid-area: cat;
+}
+
+/* Cat image animation */
+@keyframes crossFadeCats {
+  0% { content: url("cat1.jpg"); }
+  33.3% { content: url("cat2.jpg"); }
+  66.6% { content: url("cat3.jpg"); }
+  99.9% { content: url("cat1.jpg"); }
+}
+
+#catImg {
+  animation: crossFadeCats 5s infinite;
+}
 
 #footer a { color: #6f92b0; }
 
