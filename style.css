@@ -181,10 +181,11 @@ a {
 /* Cat image animation */
 @keyframes crossFadeCats {
   0% { content: url("cat1.jpg"); }
-  25% { content: url("cat2.jpg"); }
-  50% { content: url("cat3.jpg"); }
-  75% { content: url("cat4.jpg"); }
-  100% { content: url("cat5.jpg"); }
+  20% { content: url("cat2.jpg"); }
+  40% { content: url("cat3.jpg"); }
+  60% { content: url("cat4.jpg"); }
+  80% { content: url("cat5.jpg"); }
+  100% { content: url("cat1.jpg"); }
 }
 
 #catImg {
