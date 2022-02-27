@@ -190,6 +190,8 @@ a {
 
 #catImg {
   animation: crossFadeCats 5s infinite;
+  width: 70%;
+  aspect-ratio: 1 / 1;
 }
 
 #footer a { color: #6f92b0; }
