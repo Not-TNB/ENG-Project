@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 :root {
+  --blueTranslucentAlt: #00324588;
   --blueTranslucent: #005a7d88;
   --blue: #005a7d;
 }
@@ -105,6 +106,8 @@ p {
 }
 
 #plot, #characters, #settings, #likesDislikes, #trailer, #introTxtAlt { background-color: var(--blueTranslucent); }
+
+#plot:hover, #characters:hover, #settings:hover, #likesDislikes:hover, #trailer:hover, #introTxtAlt:hover { background-color: var(--blueTranslucentAlt); }
 
 #plot, #settings, #img2, #img4 { float: left; }
 #characters, #likesDislikes { float: right; }
