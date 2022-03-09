@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 :root {
-  --blueTranslucentAlt: #027dad88;
+  --blueTranslucentAlt: #00a3e388;
   --blueTranslucent: #005a7d88;
   --blue: #005a7d;
 }
@@ -76,6 +76,7 @@ p {
   opacity: 0%;
   height: 120%;
   border: 5px solid white;
+  background-color: var(--blueTranslucent);
   scrollbar-width: none; /* Invis scrollbar for Firefox */
   overflow-y: scroll; /* Allow scrolling in y-axis (vertical) */
   border-radius: 20px;
@@ -104,14 +105,14 @@ p {
   margin: 5%;
 }
 
-#introTxt, #plot, #characters, #settings, #likesDislikes, #trailer, #introTxtAlt {
+#plot, #characters, #settings, #likesDislikes, #trailer, #introTxtAlt {
   background-color: var(--blueTranslucent);
-  transition: all 0.2s;
+  transition: background-color 0.2s;
 }
 
-#introTxt:hover, #plot:hover, #characters:hover, #settings:hover, #likesDislikes:hover, #trailer:hover, #introTxtAlt:hover {
+#plot:hover, #characters:hover, #settings:hover, #likesDislikes:hover, #trailer:hover, #introTxtAlt:hover {
   background-color: var(--blueTranslucentAlt);
-  transition: all 0.2s;
+  transition: background-color 0.2s;
 }
 
 #plot, #settings, #img2, #img4 { float: left; }
