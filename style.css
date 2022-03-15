@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite'); 
 
 :root {
-  --blueTranslucentAlt: #00a3e388;
   --blueTranslucent: #005a7d88;
   --blue: #005a7d;
 }
@@ -17,7 +17,7 @@ body {
   font-size: 2em;
   background-size: cover;
   background-repeat: repeat-y;
-  font-family: "Poppins";
+  font-family: "Special Elite";
   color: white;
   text-align: center;
   height: 100%;
@@ -30,9 +30,10 @@ body {
 h1 {
   font-size: 1.7em;
   text-shadow: 0 0 100px rgba(255, 255, 255, 1);
+  font-family: 'Poppins';
 }
 
-p {
+p, li {
   font-size: 0.75em;
   margin: 2%;
 }
@@ -85,7 +86,7 @@ p {
 
 #introTxt h1, #introTxt p {
   top: -50%;
-  transform: translateY(50%);
+  transform: translateY(80%);
 }
 
 #introTxt::-webkit-scrollbar { display: none; } /* Invis scrollbar for Chrome, Safari & Opera */
@@ -105,15 +106,7 @@ p {
   margin: 5%;
 }
 
-#plot, #characters, #settings, #likesDislikes, #trailer, #introTxtAlt {
-  background-color: var(--blueTranslucent);
-  transition: background-color 0.2s;
-}
-
-#plot:hover, #characters:hover, #settings:hover, #likesDislikes:hover, #trailer:hover, #introTxtAlt:hover {
-  background-color: var(--blueTranslucentAlt);
-  transition: background-color 0.2s;
-}
+#plot, #characters, #settings, #likesDislikes, #trailer, #introTxtAlt { background-color: var(--blueTranslucent); }
 
 #plot, #settings, #img2, #img4 { float: left; }
 #characters, #likesDislikes { float: right; }
@@ -270,4 +263,16 @@ a {
 
 @media (max-width: 400px) {
   #flexDiv { height: 50%; }
+}
+
+blockquote:before {
+	content: '"';
+	left: -5rem;
+	top: -2rem;
+}
+
+block:after {
+  content: '"';
+	right: -5rem;
+	bottom: 1rem;
 }
