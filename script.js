@@ -2,8 +2,8 @@ window.onbeforeunload = function() { window.scrollTo(0, 0); }
 
 // initialize AOS (Animate On Scroll)
 AOS.init({ 
-  duration: 600,
-  offset: 0,
+  duration: 800,
+  offset: 100,
   disable: 'mobile'
 });
 
