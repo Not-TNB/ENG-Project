@@ -264,15 +264,3 @@ a {
 @media (max-width: 400px) {
   #flexDiv { height: 50%; }
 }
-
-blockquote:before {
-	content: '"';
-	left: -5rem;
-	top: -2rem;
-}
-
-block:after {
-  content: '"';
-	right: -5rem;
-	bottom: 1rem;
-}
