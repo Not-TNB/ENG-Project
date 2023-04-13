@@ -1,5 +1,5 @@
 # LINK TO WEBSITE
-[Click here!](https://not-tnb.github.io)
+[Click here!](https://not-tnb.github.io) (outdated)
 
 # RAW INFORMATION
 ### General Info
